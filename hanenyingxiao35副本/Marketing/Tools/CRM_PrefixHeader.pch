@@ -1,0 +1,252 @@
+//
+//  CRM_PrefixHeader.pch
+//  移动营销
+//
+//  Created by Hanen 3G 01 on 16/2/23.
+//  Copyright © 2016年 Hanen 3G 01. All rights reserved.
+//
+
+#ifndef CRM_PrefixHeader_pch
+#define CRM_PrefixHeader_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* CRM_PrefixHeader_pch */
+
+
+
+#define KSCreenW [UIScreen mainScreen].bounds.size.width
+#define KSCreenH [UIScreen mainScreen].bounds.size.height
+
+//cell高度
+//一行内容
+#define CELLHEIGHT1 40.0f//人员筛选 新建客户来源 新建客户客户状态 通讯录
+//两行内容 或 一行内容带图片
+#define CELLHEIGHT2 60.0f//页面 登录 注册 忘记密码 重置密码 我的拜访 拜访纪要 新建拜访 新建签到 客户地图路线列表 新建请假 新建日志 新建发布公告 创建部门 人员管理页面 人员管理部门 部门设置 员工详情 我的客户 客户详情 新建客户 我的 设置 员工详情 邀请 我的资料
+//两行内容带图片 或 三行内容
+#define CELLHEIGHT3 80.0f//公告 签到签退 签到签退个人统计 请假列表 工作日志 日志查看(管理员) 待审批 已审批 报表 考勤统计 考勤统计详情 统计 拜访历史 下属客户
+
+//section高度
+#define SECTIONHEIGHT 30.0f
+#define SECTIONHEIGHT2 20.0f
+
+//CELL左右距离
+#define LEFTWIDTH [UIView getHeight:10.0f]
+
+#define fontSize1 [UIFont systemOfSize:14.0f]
+#define fontSize2 [UIFont systemOfSize:13.0f]
+#define fontSize3 [UIFont systemOfSize:12.0f]
+#define fontSize4 [UIFont systemOfSize:10.0f]
+
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//深橘色#e05427
+#define darkOrangeColor [UIColor colorWithRed:224.0f/255.0f green:84.0f/255.0f blue:39.0f/255.0f alpha:1]
+//橘黄色#e15427
+#define mainOrangeColor [UIColor colorWithRed:238.0f/255.0f green:102.0f/255.0f blue:55.0f/255.0f alpha:1]
+//黄色#f8af3f
+#define yellowBgColor [UIColor colorWithRed:248.0f/255.0f green:175.0f/255.0f blue:63.0f/255.0f alpha:1]
+//灰色字体#a2a2a2
+//#define grayFontColor [UIColor colorWithRed:162.0f/255.0f green:162.0f/255.0f blue:162.0f/255.0f alpha:1]
+#define grayFontColor [UIColor colorWithRed:107.0f/255.0f green:107.0f/255.0f blue:107.0f/255.0f alpha:1]
+//浅灰色字体
+//#define lightGrayFontColor [UIColor colorWithRed:128.0f/255.0f green:128.0f/255.0f blue:128.0f/255.0f alpha:1]
+#define lightGrayFontColor [UIColor colorWithRed:130.0f/255.0f green:130.0f/255.0f blue:130.0f/255.0f alpha:1]
+// #define lightGrayFontColor [UIColor colorWithRed:109.0f/255.0f green:109.0f/255.0f blue:109.0f/255.0f alpha:1]
+//灰色分割线
+#define grayLineColor [UIColor colorWithRed:227.0f/255.0f green:227.0f/255.0f blue:227.0f/255.0f alpha:1]
+//黑色#303133
+#define blackFontColor [UIColor colorWithRed:48.0f/255.0f green:49.0f/255.0f blue:51.0f/255.0f alpha:1]
+//#define blackFontColor [UIColor colorWithRed:27.0f/255.0f green:27.0f/255.0f blue:28.0f/255.0f alpha:1]
+//蓝色#33c2d5
+#define blueFontColor [UIColor colorWithRed:51.0f/255.0f green:194.0f/255.0f blue:213.0f/255.0f alpha:1]
+//天蓝色字体
+#define cyanFontColor [UIColor colorWithRed:110.0f/255.0f green:180.0f/255.0f blue:202.0f/255.0f alpha:1]
+//灰色section背景色 搜索色
+#define graySectionColor [UIColor colorWithRed:241.0f/255.0f green:241.0f/255.0f blue:241.0f/255.0f alpha:1]
+//灰色列表线色
+#define grayListColor [UIColor colorWithRed:210.0f/255.0f green:210.0f/255.0f blue:210.0f/255.0f alpha:1]
+////蓝色列表线色
+//#define blueFontColor [UIColor colorWithRed:70.0f/255.0f green:194.0f/255.0f blue:210.0f/255.0f alpha:1]
+
+#define placeholderGrayFontColor [UIColor colorWithRed:200.0f/255.0f green:200.0f/255.0f blue:200.0f/255.0f alpha:1]
+#define purpleFontColor [UIColor colorWithRed:130.0f/255.0f green:91.0f/255.0f blue:235.0f/255.0f alpha:1]
+
+
+//#define HEAD_URL @"http://172.16.9.28:8080/"
+//#define LoadImageUrl @"http://172.16.9.28:8080/crm"
+
+#define HEAD_URL @"http://115.28.176.86/"
+#define LoadImageUrl @"http://115.28.176.86/crm"
+
+//登录注册
+#define GET_IMGCODE_URL @"" HEAD_URL"crm/app/getImgCode"
+#define GET_PHONECODE_URL @"" HEAD_URL"crm/app/getPhoneCode"
+#define REGISTER_URL @"" HEAD_URL"crm/app/register"
+#define LOGIN_URL @"" HEAD_URL"crm/app/login"
+
+#define LOGOUT_URL @"" HEAD_URL"crm/app/logout"
+
+#define FIND_PASS_URL @"" HEAD_URL"crm/app/findPass"
+#define MODIFY_PASS_URL @"" HEAD_URL"crm/app/modifyPassword"
+
+//公告
+#define COMMEN_USER_NOTICE_URL @"" HEAD_URL"crm/app/getNoticeListByReaderId"//普通用户公告
+#define MANAGER_CREAT_NOTICE_URL @"" HEAD_URL"crm/app/admin/saveNotice"//管理员新建公告
+#define NOTICE_DETAIL_URL @"" HEAD_URL"crm/app/getNoticeById"
+//公告详情
+#define MANAGERS_NOTICE_URL @"" HEAD_URL"crm/app/admin/getNoticeListByAuthor"//管理员我的公告列表
+#define XIUGAI_NOTICE_READER_URL @"" HEAD_URL"crm/app/updateIsread" //修改已读未读
+
+//签到
+#define SIGN_IN_OUT_DETAIL_URL @"" HEAD_URL"crm/app/getTodayCheckListByUid"//员工签到签退
+#define POST_SIGN_URL @"" HEAD_URL"crm/app/saveCheck"//提交签到签退
+#define SIGN_STATISTIC_URL @"" HEAD_URL"crm/app/getCheckListByUid"//签到签退统计
+
+#define MANAGER_CHECK_SIGN_URL @"" HEAD_URL"/crm//app/admin/getCheckListByManager"//管理员看看签到签退
+#define MANAGER_GET_MONTH_LIST_URL @"" HEAD_URL"crm/app/admin/getCheckMonthListByManager"//管理员 得到签到的 日期月份
+
+#define MANAGER_CHECK_WORKER_SIGN_LIST_URL @"" HEAD_URL"crm/app/admin/getAllCheckListByUid"
+#define MANAGER_GET_CHECK_ONE_SIGN_URL @"" HEAD_URL"/crm/app/admin/getTodayCheckListById"
+//日志
+#define CHOOSE_RECIVE_PERSON_URL @"" HEAD_URL"crm/app/getDealuserByUid"//选择日志接收人
+#define CREAT_NEW_RECORD_URL @"" HEAD_URL"crm/app/saveWorking"//新建日志
+#define COMMEN_USER_RECORD_URL @"" HEAD_URL"crm/app/getWorkingAllByUid" //工作日志 普通用户
+#define RECORD_DETAIL_URL @"" HEAD_URL"crm/app/getWorkingById" //日志详情
+#define MANAGER_ALL_RECORD_URL @"" HEAD_URL"crm/app/admin/getWorkingAllByDealuser"//管理员查看所有员工日志列表
+#define MANAGER_CHECK_ONEWORKER_ALLREORD_URL @"" HEAD_URL"crm/app/admin/getAWorkingAllByUid"//管理员查看一个员工的所有日志列表
+#define CREAT_NEW_RECORD_URL @"" HEAD_URL"crm/app/saveWorking"//
+//请假
+#define LEAVING_COMMEN_URL @"" HEAD_URL"crm/app/getLeaveListByUid"//普通用户查看自己的请假列表
+#define LEAVING_DETAIL_URL @"" HEAD_URL"crm/app/getLeaveById" //请假详情
+#define HANDLE_LEAVING_URL @"" HEAD_URL"crm/app/dealLeave" //处理请假
+#define MANAGER_RECIVE_LEAVING_LIST_URL @"" HEAD_URL"crm/app/admin/getLeaveListByManagerId"
+#define CREAT_LEAVING_URL @"" HEAD_URL"crm/app/saveLeave" //新建请假
+
+//报表
+#define WORK_REPORT_URL @"" HEAD_URL"crm/app/admin/getReport"
+#define REPORT_LIEN_ONE_URL @"" HEAD_URL"/crm/app/admin/getVisitMonthListByMid" //第一张表
+#define REPORT_LIEN_TWO_URL @"" HEAD_URL"/crm/app/admin/getMonthCustListByDay"
+#define REPORT_LIEN_THREE_URL @"" HEAD_URL"/crm/app/admin/getMonthCustList"
+
+
+
+
+
+//我的客户
+#define MY_CLIENT_URL @"" HEAD_URL"crm/app/getCustomerList"
+//新建客户
+#define ADD_CLIENT_URL @"" HEAD_URL"crm/app/addCustomer"
+//客户详情
+#define DETAIL_CLIENT_URL @"" HEAD_URL"crm/app/getCustomer"
+//修改客户详情
+#define MODIFY_DETAIL_CLIENT_URL @"" HEAD_URL"crm/app/modifyCustomer"
+//拜访历史
+#define HISTORY_CLIENT_URL @"" HEAD_URL"crm/app/getVisitListByCid"
+
+//下属客户
+#define OTHER_CLIENT_URL @"" HEAD_URL"crm/app/admin/getCustomerList"
+
+
+//我的主页+我的详情
+#define MY_HOMEPAGE_URL @"" HEAD_URL"/crm/app/getUserByUid"
+//企业通信录
+#define BUSINESS_ADDRESS_BOOK_URL @"" HEAD_URL"/crm/app/getUsers"
+//企业通信录-员工详情
+#define STUFF_DETAIL_URL @"" HEAD_URL"/crm/app/getUserByUserid"
+//邀请员工
+#define INVITE_STUFF_URL @"" HEAD_URL"crm/app/admin/inviteUser"
+//密码修改
+#define UPDATE_PASS_URL @"" HEAD_URL"crm/app/updatePassword"
+//上传头像
+#define UPDATE_USER_LOGO_URL @"" HEAD_URL"crm/app/updateUserLogo"
+
+
+
+
+//拜访
+#define GET_VISIT_URL @"" HEAD_URL"crm/app/getMyVisitList"
+#define GET_MONTH_VISIT_URL @"" HEAD_URL"crm/app/getMyMonthVisitList"
+#define NEW_VISIT_URL @"" HEAD_URL"crm/app/addVisit"
+
+#define GET_VISIT_DETAIL_URL @"" HEAD_URL"crm/app/getVisitById"
+#define UPDATE_VISIT_CONTENT_URL @"" HEAD_URL"crm/app/updateVisit"
+
+#define GET_MONTH_SUB_VISIT_URL @"" HEAD_URL"crm/app/admin/getSubMonthVisitList"
+#define GET_SUB_VISIT_URL @"" HEAD_URL"crm/app/admin/getSubVisitList"
+
+
+//公共
+#define GET_DICTIONARY_URL @"" HEAD_URL"/crm/app/getDict"
+#define GET_DEPARTMENT_URL @"" HEAD_URL"crm/app/getDepartment"
+#define GET_USER_BY_DEPARTMENT_URL @"" HEAD_URL"crm/app/getUsersByDepartment"
+#define GET_USER_BY_USERID_URL @"" HEAD_URL"crm/app/getUserByUserid"
+#define ADD_DEPARTMENT_URL @"" HEAD_URL"crm/app/admin/saveDepartment"
+#define UPDATE_DEPARTMENT_URL @"" HEAD_URL"crm/app/admin/updateDepartment"
+#define DELETE_DEPARTMENT_URL @"" HEAD_URL"crm/app/admin/delDepartmentById"
+
+#ifdef __OBJC__
+
+#import "AppDelegate.h"
+#import "UIView+Extension.h"
+#import "UIView+ViewFrame.h"
+#import "DateTool.h"
+#import "DataTool.h"
+#import "ViewTool.h"
+#import "ColorHeader.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "Toast+UIView.h"
+#import "ZLAlertView.h"
+
+#import <CoreGraphics/CoreGraphics.h>
+#import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreMedia/CoreMedia.h>
+#import <CoreVideo/CoreVideo.h>
+#import "ZBarSDK.h"
+
+#endif
+
+
+//JSON解析
+#define CRMJsonParserWithData(data) [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]
+#define TabbarH [[NSUserDefaults standardUserDefaults] floatForKey:@"tabbarH"]
+
+#define TOKEN [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]
+#define UID [[[NSUserDefaults standardUserDefaults] objectForKey:@"uid"] intValue]
+#define TYPE [[[NSUserDefaults standardUserDefaults] objectForKey:@"type"] stringValue]
+
+
+//
+//CG_INLINE CGRect
+//CGRectMake1(CGFloat x,CGFloat y,CGFloat width,CGFloat height)
+//{
+//    AppDelegate *app = [UIApplication sharedApplication].delegate;
+//    return CGRectMake(x * app.autoSizeScaleX, y * app.autoSizeScaleY, width * app.autoSizeScaleX, height * app.autoSizeScaleX);
+//}
+//
+//CG_INLINE CGRect
+//CGRectMake2(CGFloat x,CGFloat y,CGFloat width,CGFloat height)
+//{
+//    AppDelegate *app = [UIApplication sharedApplication].delegate;
+//    return CGRectMake(x, y * app.autoSizeScaleY, width, height * app.autoSizeScaleX);
+//}
+//
+//CG_INLINE CGRect
+//CGRectMake3(CGFloat x,CGFloat y,CGFloat width,CGFloat height)
+//{
+//    AppDelegate *app = [UIApplication sharedApplication].delegate;
+//    return CGRectMake(x, y * app.autoSizeScaleY, width, height);
+//}
+
+
+#define IPhone4S  self.view.height == 480
+
+#define IPhone4SInCell [UIScreen mainScreen].bounds.size.height == 480
+#define IOS7  [[[UIDevice currentDevice] systemVersion] floatValue] == 7
